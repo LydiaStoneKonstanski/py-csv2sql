@@ -1,0 +1,28 @@
+mysql> USE Data5zero
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> SHOW TABLES
+    -> ;
++---------------------+
+| Tables_in_data5zero |
++---------------------+
+| book                |
++---------------------+
+1 row in set (0.00 sec)
+
+mysql> DESCRIBE book
+    -> ;
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| book_id    | int          | NO   | PRI | NULL    | auto_increment |
+| first_name | varchar(64)  | YES  |     | NULL    |                |
+| last_name  | varchar(64)  | YES  |     | NULL    |                |
+| title      | varchar(255) | YES  |     | NULL    |                |
+| publisher  | varchar(255) | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.01 sec)
+
+mysql>

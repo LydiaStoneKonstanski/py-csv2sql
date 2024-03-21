@@ -7,6 +7,8 @@ import os
 import csv
 import pathlib
 from importlib import resources
+
+import csvfile
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
@@ -66,7 +68,7 @@ def main():
 
     # create the database
     # engine = create_engine(f"sqlite:///{sqlite_filepath}")
-    engine = create_engine("mysql+mysqldb://kris:britta@localhost/data5zero")
+    engine = create_engine("mysql+mysqldb://lydia:celeste@localhost/data5zero")
 
     Base.metadata.create_all(engine)
     Session = sessionmaker()
